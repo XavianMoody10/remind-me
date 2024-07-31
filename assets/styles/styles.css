@@ -58,7 +58,7 @@ ul {
   right: 0;
   width: 100%;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1300px;
   z-index: 10;
 }
 
@@ -151,7 +151,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-left: 10%;
+    margin-left: 7%;
     transform: translateX(0);
   }
   .navigation__list {
@@ -187,7 +187,7 @@ ul {
 }
 .hero {
   padding: 140px 20px 0 20px;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   position: relative;
 }
@@ -197,7 +197,7 @@ ul {
   flex-direction: column;
   gap: 40px;
   align-items: flex-start;
-  max-width: 560px;
+  max-width: 480px;
   margin: 0 auto;
 }
 .hero-introduction__header {
@@ -222,7 +222,7 @@ ul {
   background-color: black;
   min-height: 900px;
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   z-index: -1;
   overflow: hidden;
   background-color: #d6e5fd;
@@ -310,7 +310,7 @@ ul {
 }
 .features {
   padding: 140px 20px 0 20px;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
