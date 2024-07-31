@@ -21,6 +21,32 @@ ul {
   font-family: "Poppins", sans-serif;
 }
 
+.text--xlarge {
+  font-size: 2.5rem;
+  line-height: 65px;
+}
+
+@media (min-width: 640px) {
+  .text--xlarge {
+    font-size: 4rem;
+    line-height: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .text--xlarge {
+    line-height: 90px;
+  }
+}
+.text--small {
+  line-height: 30px;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 640px) {
+  .text--small {
+    font-size: 1rem;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -175,13 +201,9 @@ ul {
   margin: 0 auto;
 }
 .hero-introduction__header {
-  font-size: 2.5rem;
   font-weight: 600;
-  line-height: 65px;
 }
 .hero-introduction__summary {
-  line-height: 34px;
-  font-size: 1.1rem;
   color: #747474;
 }
 .hero-introduction__download-btn {
@@ -235,10 +257,6 @@ ul {
 }
 
 @media (min-width: 640px) {
-  .hero-introduction__header {
-    font-size: 4rem;
-    line-height: 80px;
-  }
   .hero-introduction__download-btn {
     font-size: 1.1rem;
   }
@@ -246,9 +264,6 @@ ul {
 @media (min-width: 1024px) {
   .hero-introduction {
     margin: 0;
-  }
-  .hero-introduction__header {
-    line-height: 90px;
   }
   .hero-background {
     display: flex;
@@ -291,6 +306,56 @@ ul {
 @media (min-width: 1280px) {
   .hero-background {
     min-height: 800px;
+  }
+}
+.features {
+  padding: 140px 20px 0 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.feature {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.feature__icon {
+  border-radius: 100%;
+  background-color: #eef4ff;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature__main-point {
+  font-size: 1.2rem;
+}
+.feature__detail {
+  color: #747474;
+}
+
+@media (min-width: 1024px) {
+  .features {
+    padding-top: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .feature {
+    text-align: start;
+    align-items: flex-start;
+    gap: 20px;
   }
 }
 
