@@ -186,13 +186,15 @@ ul {
   }
 }
 .hero {
-  padding: 140px 20px 0 20px;
+  padding-top: 140px;
   max-width: 1300px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-introduction {
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -216,24 +218,21 @@ ul {
 }
 
 .hero-background {
-  position: absolute;
-  right: 0;
-  top: 0;
   background-color: black;
-  min-height: 900px;
+  min-height: 400px;
   width: 100%;
-  max-width: 480px;
   z-index: -1;
   overflow: hidden;
   background-color: #d6e5fd;
-  border-radius: 0px 0px 0px 100px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .hero-background__image {
   z-index: 3;
   position: relative;
+  max-width: 350px;
 }
 .hero-background__circle:nth-of-type(1) {
   height: 280px;
@@ -261,13 +260,35 @@ ul {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .hero-introduction {
     margin: 0;
   }
   .hero-background {
-    display: flex;
-    min-height: 750px;
+    min-height: 500px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 400px;
+    border-radius: 0px 0px 0px 100px;
+    margin-top: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    overflow: visible;
+  }
+  .hero-introduction {
+    max-width: 510px;
+  }
+  .hero-background {
+    width: 40%;
+    min-height: 700px;
+    max-width: none;
+  }
+  .hero-background__image {
+    width: 100%;
+    max-width: none;
   }
   .hero-introduction__download-btn:hover {
     background-color: white;
@@ -326,6 +347,7 @@ ul {
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   max-width: 350px;
   margin: 0 auto;
@@ -352,6 +374,9 @@ ul {
   }
 }
 @media (min-width: 1200px) {
+  .features {
+    padding: 240px 40px 0 40px;
+  }
   .feature {
     text-align: start;
     align-items: flex-start;
