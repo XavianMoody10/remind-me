@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-logo__text {
+  font-family: "Nunito", sans-seri;
+  font-weight: 800;
+}
+.header-logo__text span {
+  color: #2d76f9;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #2d76f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+}
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.navigation__anchor {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Nunito", sans-seri;
+}
+.navigation__about-btn {
+  margin-top: 70px;
+  font-family: "Nunito", sans-seri;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 40px;
+  font-size: 1.3rem;
+}
+
+.hamburger-menu {
+  border: 2px solid #2d76f9;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  z-index: 2;
+}
+.hamburger-menu__line {
+  border: 1px solid #2d76f9;
+  width: 55%;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .header-logo__icon {
+    width: 40px;
+  }
+  .header-logo__text {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .navigation {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    align-items: center;
+  }
+  .navigation {
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+  }
+  .navigation__list {
+    flex-direction: row;
+  }
+  .navigation__anchor {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .navigation__anchor:hover {
+    color: #2d76f9;
+    font-weight: 700;
+  }
+  .navigation__about-btn {
+    border-color: #2d76f9;
+    color: #2d76f9;
+    margin-top: auto;
+    font-size: 1.2rem;
+  }
+  .navigation__about-btn:hover {
+    background-color: #2d76f9;
+    color: white;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation__about-btn {
+    margin-right: 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
