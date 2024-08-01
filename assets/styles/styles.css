@@ -47,6 +47,16 @@ ul {
     font-size: 1rem;
   }
 }
+.text--medium {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  .text--medium {
+    font-size: 2rem;
+    line-height: 55px;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -454,9 +464,6 @@ ul {
 @media (min-width: 1024px) {
   .advantages-details {
     gap: 50px;
-  }
-  .advantages-details .advantages-details__main-point {
-    font-size: 2rem;
   }
 }
 @media (min-width: 1200px) {

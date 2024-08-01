@@ -59,6 +59,17 @@ ul {
   }
 }
 
+.text--medium {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1024px) {
+  .text--medium {
+    font-size: 2rem;
+    line-height: 55px;
+  }
+}
+
 // Header
 .header {
   display: flex;
@@ -220,7 +231,6 @@ ul {
 
 // Hero section
 .hero {
-  // padding: 140px 20px 0 20px;
   padding-top: 140px;
   max-width: 1300px;
   margin: 0 auto;
@@ -527,10 +537,6 @@ ul {
 @media (min-width: 1024px) {
   .advantages-details {
     gap: 50px;
-
-    .advantages-details__main-point {
-      font-size: 2rem;
-    }
   }
 }
 
