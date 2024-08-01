@@ -70,6 +70,73 @@ ul {
   }
 }
 
+// components
+.btn--transparent-blue {
+  border: 2px solid $blue;
+  border-radius: 30px;
+  color: $blue;
+  padding: 10px 40px;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1024px) {
+  .btn--transparent-blue:hover {
+    background-color: $blue;
+    color: white;
+  }
+}
+
+.btn--blue {
+  border: 1px solid $blue;
+  background-color: $blue;
+  color: white;
+  padding: 25px 60px;
+  border-radius: 40px;
+}
+
+@media (min-width: 1024px) {
+  .btn--blue:hover {
+    background-color: white;
+    color: $blue;
+  }
+}
+
+.btn--white-outline {
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 40px;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1024px) {
+  .btn--white-outline:hover {
+    background-color: white;
+    color: $blue;
+  }
+}
+
+.btn--white {
+  background-color: white;
+  color: $blue;
+  width: 100%;
+  max-width: 204px;
+  font-family: $poppins-font;
+  padding: 18px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+@media (min-width: 1024px) {
+  .btn--white:hover {
+    background-color: $blue;
+    color: white;
+    border-color: white;
+  }
+}
+
 // Header
 .header {
   display: flex;
@@ -130,11 +197,6 @@ ul {
   &__about-btn {
     margin-top: 70px;
     font-family: $nunito-font;
-    border: 2px solid white;
-    border-radius: 30px;
-    color: white;
-    padding: 10px 40px;
-    font-size: 1.3rem;
   }
 }
 
@@ -206,15 +268,7 @@ ul {
     }
 
     &__about-btn {
-      border-color: $blue;
-      color: $blue;
       margin-top: auto;
-      font-size: 1.2rem;
-
-      &:hover {
-        background-color: $blue;
-        color: white;
-      }
     }
   }
 
@@ -256,12 +310,7 @@ ul {
   }
 
   &__download-btn {
-    border: 1px solid $blue;
-    background-color: $blue;
-    color: white;
-    padding: 25px 60px;
     font-family: $nunito-font;
-    border-radius: 40px;
   }
 }
 
@@ -346,11 +395,6 @@ ul {
       width: 100%;
       max-width: none;
     }
-  }
-
-  .hero-introduction__download-btn:hover {
-    background-color: white;
-    color: $blue;
   }
 }
 

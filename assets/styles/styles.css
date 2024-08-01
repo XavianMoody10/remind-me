@@ -57,6 +57,68 @@ ul {
     line-height: 55px;
   }
 }
+.btn--transparent-blue {
+  border: 2px solid #2d76f9;
+  border-radius: 30px;
+  color: #2d76f9;
+  padding: 10px 40px;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1024px) {
+  .btn--transparent-blue:hover {
+    background-color: #2d76f9;
+    color: white;
+  }
+}
+.btn--blue {
+  border: 1px solid #2d76f9;
+  background-color: #2d76f9;
+  color: white;
+  padding: 25px 60px;
+  border-radius: 40px;
+}
+
+@media (min-width: 1024px) {
+  .btn--blue:hover {
+    background-color: white;
+    color: #2d76f9;
+  }
+}
+.btn--white-outline {
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 40px;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1024px) {
+  .btn--white-outline:hover {
+    background-color: white;
+    color: #2d76f9;
+  }
+}
+.btn--white {
+  background-color: white;
+  color: #2d76f9;
+  width: 100%;
+  max-width: 204px;
+  font-family: "Poppins", sans-serif;
+  padding: 18px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+@media (min-width: 1024px) {
+  .btn--white:hover {
+    background-color: #2d76f9;
+    color: white;
+    border-color: white;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -112,11 +174,6 @@ ul {
 .navigation__about-btn {
   margin-top: 70px;
   font-family: "Nunito", sans-serif;
-  border: 2px solid white;
-  border-radius: 30px;
-  color: white;
-  padding: 10px 40px;
-  font-size: 1.3rem;
 }
 
 .hamburger-menu {
@@ -177,14 +234,7 @@ ul {
     font-weight: 700;
   }
   .navigation__about-btn {
-    border-color: #2d76f9;
-    color: #2d76f9;
     margin-top: auto;
-    font-size: 1.2rem;
-  }
-  .navigation__about-btn:hover {
-    background-color: #2d76f9;
-    color: white;
   }
   .hamburger-menu {
     display: none;
@@ -219,12 +269,7 @@ ul {
   color: #747474;
 }
 .hero-introduction__download-btn {
-  border: 1px solid #2d76f9;
-  background-color: #2d76f9;
-  color: white;
-  padding: 25px 60px;
   font-family: "Nunito", sans-serif;
-  border-radius: 40px;
 }
 
 .hero-background {
@@ -299,10 +344,6 @@ ul {
   .hero-background__image {
     width: 100%;
     max-width: none;
-  }
-  .hero-introduction__download-btn:hover {
-    background-color: white;
-    color: #2d76f9;
   }
 }
 @media (min-width: 1200px) {
