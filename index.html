@@ -9,6 +9,11 @@
     ></script>
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="./assets/scripts/main.js" type="module" defer></script>
+    <script
+      src="https://kit.fontawesome.com/16b96c8656.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <link rel="stylesheet" href="/assets/styles/styles.css" />
     <link
       rel="stylesheet"
@@ -18,38 +23,40 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-logo">
-        <img
-          src="./assets/icon.svg"
-          alt="RemindMe icon"
-          width="30"
-          class="header-logo__icon"
-        />
-        <p class="header-logo__text">Remind<span>me</span></p>
-      </div>
+      <div class="header-inner">
+        <div class="header-logo">
+          <img
+            src="./assets/icon.svg"
+            alt="RemindMe icon"
+            width="30"
+            class="header-logo__icon"
+          />
+          <p class="header-logo__text">Remind<span>me</span></p>
+        </div>
 
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="##" class="navigation__anchor">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="##" class="navigation__anchor">Features</a>
-          </li>
-          <li class="navigation__item">
-            <a href="##" class="navigation__anchor">About us</a>
-          </li>
-        </ul>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="##" class="navigation__anchor">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="##" class="navigation__anchor">Features</a>
+            </li>
+            <li class="navigation__item">
+              <a href="##" class="navigation__anchor">About us</a>
+            </li>
+          </ul>
 
-        <a href="##" class="navigation__about-btn btn--blue-outline"
-          >About App</a
-        >
-      </nav>
+          <a href="##" class="navigation__about-btn btn--blue-outline"
+            >About App</a
+          >
+        </nav>
 
-      <div class="hamburger-menu">
-        <div class="hamburger-menu__line"></div>
-        <div class="hamburger-menu__line"></div>
-        <div class="hamburger-menu__line"></div>
+        <div class="hamburger-menu">
+          <div class="hamburger-menu__line"></div>
+          <div class="hamburger-menu__line"></div>
+          <div class="hamburger-menu__line"></div>
+        </div>
       </div>
     </header>
 
@@ -320,6 +327,106 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-introduction">
+        <div class="footer-logo">
+          <img
+            src="/assets/icon.svg"
+            alt="Icon"
+            width="40"
+            class="footer-logo__icon"
+          />
+          <p class="footer-logo__text text--poppins">Remind<span>me</span></p>
+        </div>
+        <p class="footer-introduction-info text--poppins text--small">
+          Task deadlines and scheduling applications with various benefits and
+          advantages
+        </p>
+      </div>
+
+      <div class="footer-sitemap">
+        <strong class="footer-sitemap__heading text--poppins">Sitemaps</strong>
+
+        <ul class="footer-sitemap-list">
+          <li class="footer-sitemap-list__item">
+            <a
+              href="##"
+              class="footer-sitemap-list__anchor text--poppins text--small"
+              >Home</a
+            >
+          </li>
+
+          <li class="footer-sitemap-list__item">
+            <a
+              href="##"
+              class="footer-sitemap-list__anchor text--poppins text--small"
+              >Features</a
+            >
+          </li>
+
+          <li class="footer-sitemap-list__item">
+            <a
+              href="##"
+              class="footer-sitemap-list__anchor text--poppins text--small"
+              >About Us</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-advantages">
+        <strong class="footer-advantages__heading text--poppins"
+          >Advantages</strong
+        >
+
+        <ul class="footer-advantages-list">
+          <li class="footer-advantages-list__item">
+            <a
+              href="##"
+              class="footer-advantages-list__anchor text--poppins text--small"
+              >Set Task Better</a
+            >
+          </li>
+
+          <li class="footer-advantages-list__item">
+            <a
+              href="##"
+              class="footer-advantages-list__anchor text--poppins text--small"
+              >Easy Manage</a
+            >
+          </li>
+
+          <li class="footer-advantages-list__item">
+            <a
+              href="##"
+              class="footer-advantages-list__anchor text--poppins text--small"
+              >Get Notification</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <strong class="footer-socials__heading text--poppins">Follow Us</strong>
+
+        <ul class="footer-socials-list">
+          <li class="footer-socials-list__item">
+            <a href="##" class="footer-socials-list__anchor"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="footer-socials-list__item">
+            <a href="##" class="footer-socials-list__anchor"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="footer-socials-list__item">
+            <a href="##" class="footer-socials-list__anchor"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

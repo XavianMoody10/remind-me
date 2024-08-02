@@ -70,6 +70,22 @@ function toggleMobileNavigation() {
   });
 }
 
+// Add class to header when scrolling down and up
+function animateHeader() {
+  const header = document.querySelector(".header");
+
+  window.addEventListener("wheel", (e) => {
+    if (e.deltaY > 0) {
+      header.classList.add("header--up");
+      header.classList.remove("header--down");
+    } else {
+      header.classList.remove("header--up");
+      header.classList.add("header--down");
+    }
+  });
+}
+
+// Initiate testimonial slider using SplideJS
 function initiateTestimonialSlider() {
   document.addEventListener("DOMContentLoaded", function () {
     var splide = new Splide(".splide", {
@@ -80,4 +96,5 @@ function initiateTestimonialSlider() {
 }
 
 toggleMobileNavigation();
+animateHeader();
 initiateTestimonialSlider();
