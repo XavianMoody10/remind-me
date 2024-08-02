@@ -1,24 +1,76 @@
 "use strict";
 
+// Toggle hamburger menu icon based on if the navigation is close or open
+function toggleHamburgerMenuAnimation(isOpen) {
+  const hamburgerMenuLines = document.querySelectorAll(".hamburger-menu__line");
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+
+  const openAnimationClasses = [
+    "top-hamburger-line-open",
+    "middle-hamburger-line-open",
+    "bottom-hamburger-line-open",
+  ];
+
+  const closeAnimationClasses = [
+    "top-hamburger-line-close",
+    "middle-hamburger-line-close",
+    "bottom-hamburger-line-close",
+  ];
+
+  if (isOpen === true) {
+    hamburgerMenu.classList.add("hamburger-menu-open");
+
+    hamburgerMenu.classList.remove("hamburger-menu-close");
+
+    hamburgerMenuLines.forEach((l, i) =>
+      l.classList.add(openAnimationClasses[i])
+    );
+
+    hamburgerMenuLines.forEach((l, i) =>
+      l.classList.remove(closeAnimationClasses[i])
+    );
+  }
+
+  if (!isOpen) {
+    hamburgerMenu.classList.add("hamburger-menu-close");
+
+    hamburgerMenu.classList.remove("hamburger-menu-open");
+
+    hamburgerMenuLines.forEach((l, i) =>
+      l.classList.add(closeAnimationClasses[i])
+    );
+
+    hamburgerMenuLines.forEach((l, i) =>
+      l.classList.remove(openAnimationClasses[i])
+    );
+  }
+}
+
+// Open and close navigation (mobile)
+function toggleNavigationAnimation(isOpen) {
+  const navigation = document.querySelector(".navigation");
+
+  if (isOpen) {
+    navigation.style.transform = "translate(0)";
+    navigation.style.transitionDuration = "0.4s";
+  } else {
+    navigation.style.transform = "translate(-100%)";
+    navigation.style.transitionDuration = "0.4s";
+  }
+}
+
 function toggleMobileNavigation() {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const navigation = document.querySelector(".navigation");
   let isOpen = false;
 
   hamburgerMenu.addEventListener("click", () => {
     isOpen = !isOpen;
-
-    if (isOpen) {
-      navigation.style.transform = `translateX(0)`;
-      navigation.style.transitionDuration = "0.5s";
-    } else {
-      navigation.style.transform = `translateX(-100%)`;
-      navigation.style.transitionDuration = "0.5s";
-    }
+    toggleHamburgerMenuAnimation(isOpen);
+    toggleNavigationAnimation(isOpen);
   });
 }
 
-function initiateTestimonialSlider(params) {
+function initiateTestimonialSlider() {
   document.addEventListener("DOMContentLoaded", function () {
     var splide = new Splide(".splide", {
       drag: false,
