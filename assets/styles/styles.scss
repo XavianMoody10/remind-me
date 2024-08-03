@@ -11,11 +11,14 @@
   font-family: $poppins-font;
 }
 
+// Reusable animations
 .from-right-animation {
+  opacity: 0;
   animation: from-right-animation 1s ease-out forwards;
 }
 
 .from-left-animation {
+  opacity: 0;
   animation: from-left-animation 1s ease-out forwards;
 }
 
