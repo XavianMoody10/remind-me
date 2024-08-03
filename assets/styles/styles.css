@@ -275,6 +275,11 @@
     padding: 20px 40px;
   }
 }
+@media (orientation: landscape) and (max-width: 740px) {
+  .navigation__list {
+    flex-direction: row;
+  }
+}
 .footer {
   padding: 20px;
   display: grid;
